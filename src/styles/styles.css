@@ -70,6 +70,23 @@ h1 {
     border: 1px solid #aaa;
 }
 
+#login {
+    background-color: #2d2177;
+    color: white;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: #4131a2;
+}
+
+#login:active {
+    background-color: black;
+}
+
 #weiter {
     background-color: #2d2177;
     color: white;
@@ -85,6 +102,12 @@ h1 {
 
 #weiter:active {
     background-color: black;
+}
+
+#weiter {
+    float: right;
+    margin-right: 20px;
+    margin-top: 250px;
 }
 
 h1#begrüßung {
@@ -103,10 +126,4 @@ h1#begrüßung {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#weiter {
-    float: right;
-    margin-right: 20px;
-    margin-top: 250px;
 }

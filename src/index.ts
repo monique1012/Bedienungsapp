@@ -2,7 +2,7 @@
 import './styles/styles.css';
 
 const input = document.getElementById('eingabefeld') as HTMLInputElement;
-const button = document.getElementById('weiter') as HTMLButtonElement;
+const button = document.getElementById('login') as HTMLButtonElement;
 
 button.addEventListener('click', () => {
     console.log("Button wurde geklickt!");
