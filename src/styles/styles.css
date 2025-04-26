@@ -80,6 +80,7 @@ h1 {
 
 h1#tisch {
     margin-top: 5px;
+    margin-bottom: 0;
     font-size: 1.1rem;
     color: #4f4f4f
 }
@@ -133,6 +134,11 @@ h1#tisch {
     position: fixed;
     bottom: 32px;
     right: 2.5px;
+}
+
+#weiterRechnung {
+    margin-top: 0;
+    margin-right: 70px;
 }
 
 #auswahl {
@@ -224,4 +230,54 @@ h3 {
 .tabs .active {
     background-color: lightgray;
     color: #2d2177;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0rem auto;
+    gap: 2rem;
+}
+
+#übersicht {
+    flex: 2;
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#übersicht table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#übersicht th, #übersicht td {
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#übersicht th {
+    background-color: #eee;
+    font-size: 1.1rem;
+}
+
+#rückgeld {
+    flex: 1;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#rückgeld input[type="number"] {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
 }

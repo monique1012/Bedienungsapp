@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerichte</title>
+    <!--ACHTUNG - DAS GEHT NUR WEGEN VITE! IN "ECHT" KANN KEIN TS IM BROWSER AUSGEF�HRT WERDEN -->
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+</head>
+
+<body>
+
+    <nav id="oben">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <!--         <ul class="rechts">
+            <li class="liste"><a href="tisch.html">Tische</a></li>
+            <li class="liste"><a href="#Gerichte">Gerichte</a></li>
+            <li class="liste"><a href="#Rechnung">Rechnung</a></li>
+      <li><a href="#Verkauf">Verlauf</a></li>
+      <li><a href="#Konto"><img src="/public/account.png" alt="Dein Konto" id="account"></a></li> 
+        </ul> -->
+    </nav>
+
+    <br>
+    <h1 id="begrüßung">Hallo Platzhalter, hier die Rechnung für:</h1>
+    <h1 id="tisch">Tisch-Nr.</h1>
+    <br>
+
+    <div id="container">
+        <div id="übersicht">
+            <table border="0">
+                <thead>
+                    <tr>
+                        <th>Gericht</th>
+                        <th>Preis</th>
+                        <th>Anzahl</th>
+                        <th>Preis gesamt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Schonka-Burger</td>
+                        <td>7,50 €</td>
+                        <td id="anzahlBurger">0</td>
+                        <td id="summeBurger">0 €</td>
+                    </tr>
+                    <tr>
+                        <td>Pommes</td>
+                        <td>2,50 €</td>
+                        <td id="anzahlPommes">0</td>
+                        <td id="summePommes">0 €</td>
+                    </tr>
+                    <tr>
+                        <td>Rote Wurst</td>
+                        <td>3,50 €</td>
+                        <td id="anzahlRote">0</td>
+                        <td id="summeRote">0 €</td>
+                    </tr>
+                    <tr>
+                        <td>Steakweckle</td>
+                        <td>4,50 €</td>
+                        <td id="anzahlSteak">0</td>
+                        <td id="summeSteak">0 €</td>
+                    </tr>
+                    <tr>
+                        <td>Cola</td>
+                        <td>2,50 €</td>
+                        <td id="anzahlCola">0</td>
+                        <td id="summeCola">0 €</td>
+                    </tr>
+                    <tr>
+                        <td>Fanta</td>
+                        <td>3,50 €</td>
+                        <td id="anzahlFanta">0</td>
+                        <td id="summeFanta">0 €</td>
+                    </tr>
+                    <tr>
+                        <td>Bier</td>
+                        <td>4,50 €</td>
+                        <td id="anzahlBier">0</td>
+                        <td id="summeBier">0 €</td>
+                    </tr>
+                    <tr>
+                        <td>Weinschorle</td>
+                        <td>5,50 €</td>
+                        <td id="anzahlWein">0</td>
+                        <td id="summeWein">0 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="rückgeld">
+            <p id="gesamtsumme">Gesamtsumme: 0€</p>
+            <input type="number" id="geldKunde" placeholder="Geld Kunde">
+            <p id="rückgeld">Rückgeld: 0€</p>
+        </div>
+    </div>
+
+
+    <!--     <input type="number" id="n1">
+    <input type="number" id="n2">
+
+    <select name="Rechenzeichen" id="rechenzeichen">
+        <option value="+">+</option>
+        <option value="-">-</option>
+    </select>
+
+    <button id="rechnen">Rechnen</button> -->
+
+    <label id="ausgabe"></label>
+
+    <button class="weiter" id="weiterRechnung">Weiter</button>
+
+</body>
+<script defer type="module" src="rechnung.ts"></script>
+
+</html>
