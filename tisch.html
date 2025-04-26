@@ -15,27 +15,30 @@
         <ul class="links">
             <li><a href="index.html">Home</a></li>
         </ul>
-        <ul class="rechts">
+<!--         <ul class="rechts">
             <li class="liste"><a href="tisch.html">Tische</a></li>
             <li class="liste"><a href="#Gerichte">Gerichte</a></li>
             <li class="liste"><a href="#Rechnung">Rechnung</a></li>
-            <!--       <li><a href="#Verkauf">Verlauf</a></li>
-      <li><a href="#Konto"><img src="/public/account.png" alt="Dein Konto" id="account"></a></li> -->
-        </ul>
+      <li><a href="#Verkauf">Verlauf</a></li>
+      <li><a href="#Konto"><img src="/public/account.png" alt="Dein Konto" id="account"></a></li> 
+        </ul> -->
     </nav>
-<p></p>
+    <br>
     <h1 id="begrüßung">Hallo Platzhalter, wähle deinen Tisch!</h1>
+    <br>
 
+    <div id="dropdown">
+        <select id="auswahl">
+            <option value="">Tische</option>
+            <option value="tisch1">Tisch 1</option>
+            <option value="tisch2">Tisch 2</option>
+            <option value="tisch3">Tisch 3</option>
+            <option value="tisch4">Tisch 4</option>
+            <option value="tisch5">Tisch 5</option>
+        </select>
+    </div>
 
-    <label for="auswahl">Wähle etwas aus:</label>
-    <select id="auswahl">
-        <option value="tisch1">Tisch 1</option>
-        <option value="tisch2">Tisch 2</option>
-        <option value="tisch3">Tisch 3</option>
-        <option value="tisch3">Tisch 4</option>
-        <option value="tisch3">Tisch 5</option>
-        <option value="tisch3">Tisch 6</option>
-    </select>
+    <button id="weiter">Weiter</button>
 
 </body>
 <script defer type="module" src="tisch.ts"></script>

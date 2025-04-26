@@ -86,3 +86,27 @@ h1 {
 #weiter:active {
     background-color: black;
 }
+
+h1#begrüßung {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#auswahl {
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 800px;
+}
+
+#dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weiter {
+    float: right;
+    margin-right: 20px;
+    margin-top: 250px;
+}
