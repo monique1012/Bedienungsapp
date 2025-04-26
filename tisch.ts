@@ -1,7 +1,7 @@
 const begruessungTisch = document.getElementById('begrüßung') as HTMLHeadingElement;
 const usernameTisch = localStorage.getItem("Username");
 const selectElement = document.getElementById('auswahl') as HTMLSelectElement;
-const buttonTisch = document.getElementById('weiter') as HTMLButtonElement;
+const buttonTisch = document.getElementById('weiterTisch') as HTMLButtonElement;
 
 if (usernameTisch) {
     begruessungTisch.textContent = `Hallo ${usernameTisch}, wähle deinen Tisch!`;

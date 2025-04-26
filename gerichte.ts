@@ -3,6 +3,10 @@ const usernameGericht = localStorage.getItem("Username");
 const tischGericht = document.getElementById('tisch') as HTMLHeadingElement;
 const tischNummerGericht = localStorage.getItem("AusgewählterTisch");
 const buttonGericht = document.getElementById('weiter') as HTMLButtonElement;
+let tabs = document.querySelectorAll(".tabs h3");
+let tabContents = document.querySelectorAll(".tab-content div")
+
+console.log(tabs, tabContents);
 
 if (usernameGericht) {
     begruessungGericht.textContent = `Hallo ${usernameGericht}, wähle die Gerichte!`;
@@ -11,20 +15,21 @@ if (tischNummerGericht) {
     tischGericht.textContent = `${tischNummerGericht}`;
 }
 
-selectElement.addEventListener('change', () => {
-    const selectedValue = selectElement.value;
-    console.log(selectedValue); 
-    localStorage.setItem('AusgewählterTisch', selectedValue);
+tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () =>{
+        tabContents.forEach((content) => {
+            content.classList.remove("active");
+        });
+        tabs.forEach(tab => {
+            tab.classList.remove("active");
+        });
+        tabContents[index].classList.add("active");
+        tabs[index].classList.add("active");
+    });
 });
 
-buttonGericht.addEventListener('click', () => {
+
+/* buttonGericht.addEventListener('click', () => {
     console.log("Button wurde geklickt!");
-
-    if (selectElement.value === '') {
-        alert(`Bitte wähle einen Tisch!`);
-        return;
-    } else {
-        console.log(selectElement.value);
-        window.location.href = "gerichte.html";
-    }
-});
+    window.location.href = "rechnung.html";
+}); */

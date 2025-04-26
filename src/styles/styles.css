@@ -1,7 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    /*     font-family: Arial, sans-serif;
+    background-color: #ffffff; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
 }
 
 #oben {
@@ -101,27 +109,28 @@ h1#tisch {
     background-color: black;
 }
 
-#weiter {
+.weiter {
     background-color: #2d2177;
     color: white;
     padding: 0.4rem 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    float: right;
+    margin-right: 50px;
+    margin-top: 200px;
 }
 
-#weiter:hover {
+.weiter:hover {
     background-color: #4131a2;
 }
 
-#weiter:active {
+.weiter:active {
     background-color: black;
 }
 
-#weiter {
-    float: right;
-    margin-right: 20px;
-    margin-top: 250px;
+#weiterGericht {
+    margin-top: 10px;
 }
 
 #auswahl {
@@ -140,4 +149,77 @@ h1#tisch {
 #bilderGerichte {
     width: 190px;
     height: 120px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 30px 20px;
+}
+
+th,
+td {
+    text-align: center;
+    font-size: 18px;
+}
+
+.bilderGerichte {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.bilderGerichte:hover {
+    transform: scale(1.05);
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.container {
+    width: 170vmin;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 160px;
+    background-color: lightcyan;
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h3 {
+    background-color: darkgray;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tab-content {
+    background-color: lightgray;
+    padding: 20px 40px;
+}
+
+.tab-content div {
+    display: none;
+}
+
+.tab-content .active {
+    display: block;
+}
+
+.tabs .active {
+    background-color: lightgray;
+    color: #2d2177;
 }

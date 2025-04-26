@@ -27,39 +27,75 @@
     <h1 id="begrüßung">Hallo Platzhalter, wähle die Gerichte!</h1>
     <h1 id="tisch">Tisch-Nr.</h1>
     <br>
+    
+    <div class="container">
+        <div class="tabs">
+            <h3 class="active">Essen</h3>
+            <h3>Trinken</h3>
+        </div>
+        <div class="tab-content">
+            <div class="active">
+                <table border="0">
+                    <thead>
+                        <tr>
+                            <td><img src="public/burger.jpg" alt="Burger" class="bilderGerichte"></td>
+                            <td><img src="public/pommes.jpg" alt="Pommes" class="bilderGerichte"></td>
+                            <td><img src="public/roteWurst.JPG" alt="Rote Wurst" class="bilderGerichte"></td>
+                            <td><img src="public/steak.JPG" alt="Steakweckle" class="bilderGerichte"></td>
+                        </tr>
+                        <tr>
+                            <th>Schonka-Burger</th>
+                            <th>Pommes</th>
+                            <th>Rote Wurst</th>
+                            <th>Steakweckle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7,50 €</td>
+                            <td>2,50 €</td>
+                            <td>3,50 €</td>
+                            <td>4,50 €</td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" id="anzahlBurger" min="0" max="30" step="1" value="0"></td>
+                            <td><input type="number" id="anzahlPommes" min="0" max="30" step="1" value="0"></td>
+                            <td><input type="number" id="anzahlRote" min="0" max="30" step="1" value="0"></td>
+                            <td><input type="number" id="anzahlSteak" min="0" max="30" step="1" value="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <table border="0">
+                    <thead>
+                        <tr>
+                            <td>images</td>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Preis</td>
+                        </tr>
+                        <tr>
+                            <td>Input</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
-    <table border="0">
-        <thead>
-            <tr>
-                <td><img src="public/burger.jpg" alt="Burger" id="bilderGerichte"></td>
-                <td><img src="public/pommes.jpg" alt="Burger" id="bilderGerichte"></td>
-                <td><img src="public/roteWurst.JPG" alt="Burger" id="bilderGerichte"></td>
-                <td><img src="public/steak.JPG" alt="Burger" id="bilderGerichte"></td>
-            </tr>
-            <tr>
-                <th>Schonka-Burger</th>
-                <th>Pommes</th>
-                <th>Rote Wurst</th>
-                <th>Steakweckle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>7,50 €</td>
-                <td>2,50 €</td>
-                <td>3,50 €</td>
-                <td>4,50 €</td>
-            </tr>
-            <tr>
-                <td><input type="number" id="anzahlBurger" min="0" max="30" step="1" value="0"></td>
-                <td><input type="number" id="anzahlPommes" min="0" max="30" step="1" value="0"></td>
-                <td><input type="number" id="anzahlRote" min="0" max="30" step="1" value="0"></td>
-                <td><input type="number" id="anzahlSteak" min="0" max="30" step="1" value="0"></td>
-            </tr>
-        </tbody>
-    </table>
 
-    <button id="weiter">Weiter</button>
+
+
+
+    
+
+    <button class="weiter" id="weiterGericht">Weiter</button>
 
 </body>
 <script defer type="module" src="gerichte.ts"></script>
