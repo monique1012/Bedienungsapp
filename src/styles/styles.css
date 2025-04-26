@@ -57,11 +57,25 @@ body {
     height: 80px;
 }
 
-h1 {
+h2 {
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+h1 {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+h1#tisch {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    color: #4f4f4f
+}
+
 
 #eingabefeld {
     padding: 0.5rem;
@@ -110,11 +124,6 @@ h1 {
     margin-top: 250px;
 }
 
-h1#begrüßung {
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
 #auswahl {
     margin-top: 100px;
     padding: 10px;
@@ -126,4 +135,9 @@ h1#begrüßung {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#bilderGerichte {
+    width: 190px;
+    height: 120px;
 }

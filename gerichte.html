@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerichte</title>
+    <!--ACHTUNG - DAS GEHT NUR WEGEN VITE! IN "ECHT" KANN KEIN TS IM BROWSER AUSGEF�HRT WERDEN -->
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+</head>
+
+<body>
+
+    <nav id="oben">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <!--         <ul class="rechts">
+            <li class="liste"><a href="tisch.html">Tische</a></li>
+            <li class="liste"><a href="#Gerichte">Gerichte</a></li>
+            <li class="liste"><a href="#Rechnung">Rechnung</a></li>
+      <li><a href="#Verkauf">Verlauf</a></li>
+      <li><a href="#Konto"><img src="/public/account.png" alt="Dein Konto" id="account"></a></li> 
+        </ul> -->
+    </nav>
+
+    <br>
+    <h1 id="begrüßung">Hallo Platzhalter, wähle die Gerichte!</h1>
+    <h1 id="tisch">Tisch-Nr.</h1>
+    <br>
+
+    <table border="0">
+        <thead>
+            <tr>
+                <td><img src="public/burger.jpg" alt="Burger" id="bilderGerichte"></td>
+                <td><img src="public/pommes.jpg" alt="Burger" id="bilderGerichte"></td>
+                <td><img src="public/roteWurst.JPG" alt="Burger" id="bilderGerichte"></td>
+                <td><img src="public/steak.JPG" alt="Burger" id="bilderGerichte"></td>
+            </tr>
+            <tr>
+                <th>Schonka-Burger</th>
+                <th>Pommes</th>
+                <th>Rote Wurst</th>
+                <th>Steakweckle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7,50 €</td>
+                <td>2,50 €</td>
+                <td>3,50 €</td>
+                <td>4,50 €</td>
+            </tr>
+            <tr>
+                <td><input type="number" id="anzahlBurger" min="0" max="30" step="1" value="0"></td>
+                <td><input type="number" id="anzahlPommes" min="0" max="30" step="1" value="0"></td>
+                <td><input type="number" id="anzahlRote" min="0" max="30" step="1" value="0"></td>
+                <td><input type="number" id="anzahlSteak" min="0" max="30" step="1" value="0"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="weiter">Weiter</button>
+
+</body>
+<script defer type="module" src="gerichte.ts"></script>
+
+</html>
