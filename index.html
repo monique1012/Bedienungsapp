@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <!--ACHTUNG - DAS GEHT NUR WEGEN VITE! IN "ECHT" KANN KEIN TS IM BROWSER AUSGEF�HRT WERDEN -->
-  <script defer type="module" src="/src/index.ts"></script>
   <link rel="stylesheet" href="/src/styles/styles.css" />
 </head>
 
@@ -17,7 +16,7 @@
       <li><a href="index.html">Home</a></li>
     </ul>
     <ul class="rechts">
-      <li class="liste"><a href="#Tische">Tische</a></li>
+      <li class="liste"><a href="tisch.html">Tische</a></li>
       <li class="liste"><a href="#Gerichte">Gerichte</a></li>
       <li class="liste"><a href="#Rechnung">Rechnung</a></li>
       <!--       <li><a href="#Verkauf">Verlauf</a></li>
@@ -29,11 +28,12 @@
     <img src="/public/account.png" alt="User Icon" id="Icon">
     <h1>LOGIN</h1>
 
-    <input type="text" placeholder="Username" class="eingabefeld">
+    <input type="text" placeholder="Username" id="eingabefeld">
 
-    <button class="weiter">Log In</button>
+    <button id="weiter">Log In</button>
   </div>
 
 </body>
+<script defer type="module" src="/src/index.ts"></script>
 
 </html>

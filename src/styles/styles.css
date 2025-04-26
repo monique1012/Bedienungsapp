@@ -2,84 +2,87 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-  }
-  
-  #oben {
+}
+
+#oben {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #2d2177;
     padding: 0.8rem 1rem;
     margin: 0;
-  }
-  
-  #oben ul {
+}
+
+#oben ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .links li a,
-  .rechts li a {
+}
+
+.links li a,
+.rechts li a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem;
-  }
-  
-  .links li a {
+}
+
+.links li a {
     font-weight: bold;
     font-size: 1.2rem;
-  }
-  
-  .rechts {
+}
+
+.rechts {
     gap: 2rem;
-  }
-  
+}
+
 
 /*   #account {
     width: 20px;
     height: 20px;
     vertical-align: middle;
   } */
-  
-  #loginbereich {
+
+#loginbereich {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  }
-  
-  #Icon {
+}
+
+#Icon {
     width: 80px;
     height: 80px;
-  }
-  
-  h1 {
+}
+
+h1 {
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
-  }
-  
-  .eingabefeld {
+}
+
+#eingabefeld {
     padding: 0.5rem;
     width: 250px;
     border-radius: 5px;
     border: 1px solid #aaa;
-  }
-  
-  .weiter {
+}
+
+#weiter {
     background-color: #2d2177;
     color: white;
     padding: 0.4rem 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .weiter:hover {
+}
+
+#weiter:hover {
     background-color: #4131a2;
-  }
-  
+}
+
+#weiter:active {
+    background-color: black;
+}
