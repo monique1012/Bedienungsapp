@@ -130,7 +130,9 @@ h1#tisch {
 }
 
 #weiterGericht {
-    margin-top: 10px;
+    position: fixed;
+    bottom: 32px;
+    right: 2.5px;
 }
 
 #auswahl {

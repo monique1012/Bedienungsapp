@@ -2,7 +2,7 @@ const begruessungGericht = document.getElementById('begrüßung') as HTMLHeading
 const usernameGericht = localStorage.getItem("Username");
 const tischGericht = document.getElementById('tisch') as HTMLHeadingElement;
 const tischNummerGericht = localStorage.getItem("AusgewählterTisch");
-const buttonGericht = document.getElementById('weiter') as HTMLButtonElement;
+const buttonGericht = document.getElementById('weiterGericht') as HTMLButtonElement;
 let tabs = document.querySelectorAll(".tabs h3");
 let tabContents = document.querySelectorAll(".tab-content div")
 
@@ -29,7 +29,7 @@ tabs.forEach((tab, index) => {
 });
 
 
-/* buttonGericht.addEventListener('click', () => {
+buttonGericht.addEventListener('click', () => {
     console.log("Button wurde geklickt!");
     window.location.href = "rechnung.html";
-}); */
+});
