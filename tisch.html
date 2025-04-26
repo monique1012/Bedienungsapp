@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--ACHTUNG - DAS GEHT NUR WEGEN VITE! IN "ECHT" KANN KEIN TS IM BROWSER AUSGEF�HRT WERDEN -->
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+</head>
+
+<body>
+
+    <nav id="oben">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <ul class="rechts">
+            <li class="liste"><a href="tisch.html">Tische</a></li>
+            <li class="liste"><a href="#Gerichte">Gerichte</a></li>
+            <li class="liste"><a href="#Rechnung">Rechnung</a></li>
+            <!--       <li><a href="#Verkauf">Verlauf</a></li>
+      <li><a href="#Konto"><img src="/public/account.png" alt="Dein Konto" id="account"></a></li> -->
+        </ul>
+    </nav>
+<p></p>
+    <h1 id="begrüßung">Hallo Platzhalter, wähle deinen Tisch!</h1>
+
+
+    <label for="auswahl">Wähle etwas aus:</label>
+    <select id="auswahl">
+        <option value="tisch1">Tisch 1</option>
+        <option value="tisch2">Tisch 2</option>
+        <option value="tisch3">Tisch 3</option>
+        <option value="tisch3">Tisch 4</option>
+        <option value="tisch3">Tisch 5</option>
+        <option value="tisch3">Tisch 6</option>
+    </select>
+
+</body>
+<script defer type="module" src="tisch.ts"></script>
+
+</html>
