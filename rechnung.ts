@@ -96,7 +96,15 @@ if (geldKundeInput && rueckgeldElement) {
 buttonRechnung.addEventListener('click', () => {
     console.log("Button wurde geklickt!");
     window.location.href = "tisch.html";
-    localStorage.clear();
+    localStorage.removeItem("AusgewählterTisch");
+    localStorage.removeItem("anzahlBurger");
+    localStorage.removeItem("anzahlPommes");
+    localStorage.removeItem("anzahlRote");
+    localStorage.removeItem("anzahlSteak");
+    localStorage.removeItem("anzahlCola");
+    localStorage.removeItem("anzahlFanta");
+    localStorage.removeItem("anzahlBier");
+    localStorage.removeItem("anzahlWein");
 });
 
 document.addEventListener('keydown', (event) => {
