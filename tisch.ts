@@ -24,3 +24,9 @@ buttonTisch.addEventListener('click', () => {
         window.location.href = "gerichte.html";
     }
 });
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        buttonTisch.click();
+    }
+});

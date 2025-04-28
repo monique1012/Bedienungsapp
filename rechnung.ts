@@ -52,7 +52,7 @@ gerichte.forEach(gericht => {
         anzahlElement.textContent = anzahl.toString();
 
         const preisGesamt = anzahl * gericht.einzelpreis;
-        summeElement.textContent = preisGesamt.toFixed(2) + " €";  // auf 2 Nachkommastellen
+        summeElement.textContent = preisGesamt.toFixed(2) + " €"; 
     }
 });
 
@@ -70,14 +70,13 @@ gerichte.forEach(gericht => {
         const preisGesamt = anzahl * gericht.einzelpreis;
         summeElement.textContent = preisGesamt.toFixed(2) + " €";
 
-        gesamtSumme += preisGesamt;  // hier wird einfach alles addiert
+        gesamtSumme += preisGesamt; 
     }
 });
 
-// Am Ende das Gesamtergebnis eintragen:
 const gesamtsummeElement = document.getElementById('gesamtsumme');
-if (gesamtsumme) {
-    gesamtsumme.textContent = "Gesamtsumme: " + gesamtSumme.toFixed(2) + " €";
+if (gesamtsummeElement) {
+    gesamtsummeElement.textContent = "Gesamtsumme: " + gesamtSumme.toFixed(2) + " €";
 };
 
 if (geldKundeInput && rueckgeldElement) {
@@ -89,7 +88,6 @@ if (geldKundeInput && rueckgeldElement) {
 
             rueckgeldElement.textContent = "Rückgeld: " + rueckgeld.toFixed(2) + " €";
         } else {
-            // Falls nichts eingetippt oder ungültig
             rueckgeldElement.textContent = "Rückgeld: 0.00 €";
         }
     });
@@ -99,4 +97,10 @@ buttonRechnung.addEventListener('click', () => {
     console.log("Button wurde geklickt!");
     window.location.href = "tisch.html";
     localStorage.clear();
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' && !(document.activeElement instanceof HTMLInputElement)) {
+        buttonRechnung.click();
+    }
 });

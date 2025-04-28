@@ -14,8 +14,6 @@ const inputFanta = document.getElementById('anzahlFanta') as HTMLInputElement;
 const inputBier = document.getElementById('anzahlBier') as HTMLInputElement;
 const inputWein = document.getElementById('anzahlWein') as HTMLInputElement;
 
-const buttonClear = document.getElementById('clear') as HTMLButtonElement;
-
 const speichereInLocalStorage = (input: HTMLInputElement, key: string) => {
     input.addEventListener('input', () => {
         localStorage.setItem(key, input.value);
@@ -57,11 +55,13 @@ speichereInLocalStorage(inputFanta, "anzahlFanta");
 speichereInLocalStorage(inputBier, "anzahlBier");
 speichereInLocalStorage(inputWein, "anzahlWein");
 
-buttonClear.addEventListener('click', () =>{
-    localStorage.clear();
-})
-
 buttonGericht.addEventListener('click', () => {
     console.log("Button wurde geklickt!");
     window.location.href = "rechnung.html";
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        buttonGericht.click();
+    }
 });
